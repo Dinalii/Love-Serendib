@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Skeptics</title>
+    <link rel="stylesheet" href=".css">
+  </head>
+  <body>
+      <!-- header -->
+    <div class="slideshow" style="max-width: 700px;">
+        <img src="slide" src="" style="width: 100%">
+        <img src="slide" src="" style="width: 100%">
+        <img src="slide" src="" style="width: 100%">
+    </div>
+
+
+
+
+    <script>
+        var myIndex=0;
+        carousel();
+
+        function carousel(){
+            var index;
+            var x=document.getElementByIdClassName("slide");
+            for (index=0;index<x.length;i++){
+                x[index].style.display="none";
+            }
+
+            i++;
+            if (i >x.length){i=1}
+            x[i-1].style.display="block";
+            setTimeout(carousel,2000);
+        }
+        </script>
+        
+
+  </body>
+</html>
+

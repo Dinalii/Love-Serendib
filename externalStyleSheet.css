@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);/*header font*/
+@import url(https://fonts.googleapis.com/css?family=Bitter);/*tab*/
+
+
+
+ .space{
+   padding: 10px ;
+ }
+
+ /* header with buttons */
+ .header{
+    height:120px;                        /*height of the header*/
+    background-color:#191970;          /*header color*/
+    font-size: 24px;                     /*font size of the objects in header*/
+    text-align: center;
+   }
+ 
+ .grid-container {
+     display: grid;
+     grid-template-columns: 10% 65% 15%; /*logo textButtons */
+     text-align: justify;
+   }
+ 
+ .grid-container-2 {
+     display: grid;
+     grid-template-columns: auto auto auto; /*imageButtons*/
+     text-align: justify;
+   }
+ 
+ #logo {    
+     width: 100%;
+     float: center;
+   }
+
+ .align-1{
+   padding-left: 20px;                       /*navigationButtons aligning*/
+ }
+
+ /* location-2 image placing */
+ #location{
+   font-size:24px;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   padding-left: 80px;
+ }
+   
+ .buttons {
+   display: flex;
+   flex-wrap: wrap;
+   width: 800px;
+   height: 120px;
+ }
+ 
+ /* buttons in the header */
+ .btn {
+   font-family: 'Roboto Slab';
+   cursor: pointer;
+   box-shadow: -1px 2px 2px 0 blue;
+   width: 160px;
+   height: 120px;
+   padding: 5px;
+   color:#3ba7d1;
+   font-weight: bold;
+   font-size: 25px;
+   background:#191970;
+   transition: all 0.16s ease-in;
+ }
+ 
+ .btn:hover {
+   background:#02012b;
+   color:white;
+   box-shadow: #fff;
+   border-top-color:#32130c;  
+ }
+ .btn:active {
+   background-color:lightblue;
+   border-color: #cbbcf6 ;
+   transform: translateY(4px);
+ }
+
+
+ /* Topics */
+ h1{
+   text-align:center;
+   font-size:40px;
+   font-family: 'Pacifico', monospace;  
+ }
+  
+  h4{
+    font-family: Bangers;
+    text-align:center;
+  
+  }
+
+ p{
+    font-family: 'Roboto Slab';
+    font-size: 15px;
+    font-style: italic;
+ }
+
+ a {
+   font-family: 'Teko', sans-serif;
+   grid-column: 1;
+   grid-row: 1;
+   align-self: end;
+   justify-self: center;
+   padding-bottom: 1rem;
+   text-decoration:none;
+ }
+
+ 
+/*scroll button*/
+#scrollBtn {
+   position: fixed; /* Fixed/sticky position */
+   bottom: 50px; /* Place the button at the bottom of the page */
+   right: 30px; /* Place the button 30px from the right */
+   z-index: 99; /* Make sure it does not overlap */
+   background-color:#3ba7d1; /* Set a background color */
+   color: white; /* Text color */
+   cursor: pointer; /* Add a mouse pointer on hover */
+   padding: 15px; /* Some padding */
+   border-radius: 10px; /* Rounded corners */
+   font-size: 18px; /* Increase font size */
+ }
+ 
+ #scrollBtn:hover {
+   background-color: #555; /* Add a dark-grey background on hover */
+ }
+
+   /* footer */
+.footer {
+    background-color: #191970;
+    text-align: center;
+    margin: 5px 0;
+    padding: 5px 0;
+    height: 165px;
+}
+
+
+/*Social Media Icons*/
+.socialMedia-wrapper {
+    text-align: center;
+}
+
+.socialMedia-wrapper ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.twitter-icon,
+.facebook-icon,
+.linkedin-icon,
+.tumblr-icon
+{
+    margin-top: .625em;
+    width: 40px;
+    height: 40px;
+    opacity: .6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    border-radius: 25px;
+}
+
+.twitter-icon:hover,
+.facebook-icon:hover,
+.linkedin-icon:hover,
+.tumblr-icon:hover
+ {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+/* copyright */
+.cp-text{
+    color: white; 
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  }
+
+/*pageeditor  */
+.pageeditor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 100px;
+ 
+  
+}
+
+.pageeditor {
+  font-family: 'Noto Sans', sans-serif;
+  cursor: pointer;
+  box-shadow: -1px 3px 3px 0 rgba(80, 80, 80, .2);
+  width: 145px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 30px;
+  margin: 0 10px 40px;
+  font-weight: bold;
+  flex: 0 0 auto;
+}
+.pageeditor {
+  background: #cbbcf6;
+  transition: all 0.16s ease-in;
+}
+
+.pageeditor:hover {
+  background: pink;
+  color: black;
+  box-shadow: 0 0 0 1px rgba(80, 80, 80, .5);
+}
+.pageeditor:active {
+  background-color:none;
+  border-color: #cbbcf6 ;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+

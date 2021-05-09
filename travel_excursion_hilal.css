@@ -1,0 +1,11 @@
+    .header_travel{
+        width: 100%;
+        height: 700px;
+        background-image: url("bkboat.JPG");
+        background-size: cover;
+        background-color: black;
+        padding-top:25px;
+    }
+  .introduction_travel{
+      background-color:blanchedalmond;
+  }

@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);/*header font*/
+ @import url(https://fonts.googleapis.com/css?family=Pacifico); /* topic font */
+ @import url(https://fonts.googleapis.com/css?family=Bitter);/*sub topics*/
+
+body {
+     margin: 10px;                        /*space around the content*/
+     background-image: url("coronabk-2.jpg"); /* background image */
+     background-attachment: fixed;
+  }
+  
+  
+/* Gray Scale */
+.image figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.image figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+  .subtopic{
+    font-family: 'Bitter';
+    font-size: 17px;
+    text-align: left;
+    color: lightcyan;
+    
+  }
+  
+  /* paragraph texts */
+  p{
+    
+    color:cornsilk;
+    text-align:center;
+  }
+  
+  .no{
+    color: chocolate;
+  }
+
+      
+      .wrapper {
+        max-width: 1600px;
+        margin: 0 10px;
+        display: grid;
+        grid-gap: 10px;
+      }
+      
+      @media screen and (min-width: 600px) {
+      
+        /* no grid support? */
+        .block-a, .block-b, .block-c {
+          float: left;
+          width: 19.1489%;
+        }
+      
+        .content {
+          float: right;
+          width: 70%;
+        }
+      
+        .wrapper {
+          margin: 0 auto;
+          grid-template-columns: 1fr 3fr;
+          grid-auto-rows: minmax(150px, auto);
+        }
+        
+        .main, .footer {
+          grid-column: 1 / -1;
+          /* needed for the floated layout */
+          /* clear: both; */
+        }
+        
+        .block-a {
+          grid-column: 1;
+          grid-row: 2;
+        }
+        
+        .block-b {
+          grid-column: 1;
+          grid-row: 3;
+        }
+        
+        .block-c {
+          grid-column: 1;
+          grid-row: 4;
+        }
+        
+        .content {
+          grid-column: 2;
+          grid-row: 2 / 5;
+        }
+      
+      }
+      
+      .wrapper > * {
+        background-color: #555;
+        opacity: .8;
+        color: black;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        /* needed for the floated layout*/
+        margin-bottom: 10px;
+        /*     z-index: 1; */
+  background-color: linear-gradient(130deg,   50%,#777B7E  0%, #D6CFC7 85%, #C7C6C1,#777B7E  100%);
+}
+      
+      
+      /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+      @supports (display: grid) {
+        .wrapper > * {
+          width:fit-content;
+          margin: 0;
+        }
+      }
+

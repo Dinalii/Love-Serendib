@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- css stylesheet -->
+      <link rel="stylesheet" href="externalStyleSheet.css">
+      <title >Discover Srilanka</title>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+  font-family: Arial;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  max-width: 297px;
+}
+
+.navbar option {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 10;
+}
+
+.navbar option:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content option {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content option:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 1; 
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+  margin: 20px;
+}
+
+/* Expanding image text */
+#imgtext {
+  
+  bottom: 1px;
+  left: 15px;
+  
+  font-size: 20px;
+  
+ 
+  margin: 20px;
+  padding: 20px;
+}
+
+
+
+.img1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  
+}
+
+
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+ 
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+body {
+ background-color:#ADD8E6;
+}
+
+</style>
+</head>
+<body>
+  <header class="header" >
+        <div class="grid-container">
+        <div class="grid-item"><div id="logo"><img src="logo-2.jpg" alt="logo" class="logoImage" width="120" height="120" /></div></div>
+        <div class="grid-item"><div class="align-1">
+            <div class="buttons">
+              <div class="grid-item"> <a href="homePage.html"><button class="btn ">Home</button></a></div>
+              <div class="grid-item"> <a href="team members.html"><button class="btn ">About Us</button></a></div>
+              <div class="grid-item"> <a href="quiz strt.html"><button class="btn ">Quiz</button></a></div>
+              <div class="grid-item"> <a href="commentForm.html"><button class="btn ">Feedback</button></a></div>
+              <div class="grid-item">  <a href="site map2.html">  <button class="btn ">Site Map</button></a></div>
+        </div></div></div>
+        <div class="grid-container-2">
+          <div class="grid-item"></div>
+           <div class="grid-item"><div class="align-2"> <button class="btn "><a href="shop.html"><input type="image" name="hilal" src="shop-2.png" alt="shopnow" ></input></a></button></div></div>
+           <div class="grid-item"><div class="align-2"><button class="btn "><a href="https://www.google.com/maps/d/viewer?mid=1xmmR9YGeEUKsdsQkkLoeoJUqwT4&ll=5.6634975895437245%2C80.68945633256286&z=6">
+            <input type="image" name="" src="location-2.png" alt="location" ></input></a></button></div></div>
+        </div>
+      </div>
+    </header>
+
+<div class="navbar">
+  
+  <div class="dropdown">
+    <button class="dropbtn">background colour
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" >
+      <option  onclick="document.body.style.backgroundColor='white'">White</option>
+	  <option  onclick="document.body.style.backgroundColor='black'">Black</option>
+	  <option  onclick="document.body.style.backgroundColor='#ADD8E6'">Blue</option>
+	  <option  onclick="document.body.style.backgroundColor='#90EE90'">Green</option>
+	  <option  onclick="document.body.style.backgroundColor='yellow'">Yellow</option>
+	  <option  onclick="document.body.style.backgroundColor='gray'">Gray</option>
+        
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">text colour
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <option  onclick="document.getElementById('main').style.color = 'black'">Black</option>
+	  <option  onclick="document.getElementById('main').style.color = 'white'">White</option>
+	  <option  onclick="document.getElementById('main').style.color = 'red'">Red</option>
+	  <option  onclick="document.getElementById('main').style.color = 'yellow'">Yellow</option>
+	  <option  onclick="document.getElementById('main').style.color = 'brown'">Brown</option>
+	  <option  onclick="document.getElementById('main').style.color = '#ADD8E6'">Blue</option>
+       
+    </div>
+  </div> 
+</div>
+<div id="main" >
+
+<div style="text-align:center">
+  
+  </div>
+  
+  <div class="img1">
+  
+  <img src="4sky_dis_sl.jpg" alt="sky" style="width:100%;"  height="300">
+  <div class="centered" style="font-size:70px">Discover SriLanka</div>
+  
+  </div>
+  
+
+<h3>Where do you want to go?</h3>
+
+
+<div class="row">
+  <div class="column">
+    <img src="4beach.jpg" alt="<h1>Arugam Bay</h1><p>Arugam bay is beutiful beach in Sri Lanka Know for it beutiful 
+	sea life,goldern sand beaches and most of all great waves which provide surface with exitment. 
+	Arugam is one of top 10 places to surf in the world .It is Great place to relax in the burning
+	sun and see the ocean beuty by smokling.With waves fresh from Antarctica crashing up onto the beach,
+	Arugam Bay is sometimes claimed to be one of the top ten surf points in the world, and periodically plays 
+	host to international tournaments. The best time for surfing is between April and Oct/Nov.
+	A short way inland from Arugam Bay the main road west passes through the small but beautiful Lahugala National Park,
+	comprising Lahugula Tank and a magnificent swathe of dry mixed evergreen forest, dotted with lofty rosewoods and
+	satinwoods. The park is best known for its elephants: up to 150 congregate around the tank during July and August,
+	when the rest of Lahugala’s waters dry up, to drink and feed on the beru grass which grows prolifically around
+	the water. The tank is also good for spotting a wide range of aquatic birds, including innumerable snowy 
+	white egrets that can often be seen hitching a ride on the backs of obliging elephants. When the rains come
+	the elephants disperse, and large sections of the park turn a brilliant, post-monsoonal green.</p>" 
+	height="110"style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="4ella.jpg" alt="<h1>Ella</h1><p>From scaling the heady heights of Ella Rock, to laying eyes on the mystical 
+	Nine Arch Bridge for the very first time; standing on the edge of the roaring Diyaluma Falls 
+	(the second tallest in the country), and winding through the tea plantations and mountains passes on the
+	famous Kandy to Ella train; many of our favourite Sri Lankan adventures can be found right here.At its heart, 
+	Ella is a charming and laid back village perfect for relaxing, hiking and escaping the searing 
+	temperatures of the southern coast.The Nine Arch Bridge is flanked by verdant forests and tea plantations,
+	standing proudly across the valley below. On misty days, low cloud hangs in the valley, giving the whole area
+	a moody, mystical feel.Completed in 1921, the Nine Arch Bridge is built entirely out of brick,
+	rock and cement, with no metal used in its construction - an engineering feat back in those days.
+	Spanning 91 meters at a height of 24 feet, the bridge is on the famous Kandy to Bandarawela (via Ella) 
+	train line, with trains passing around five times a day, depending on the ever changing Sri Lankan train timetable. </p> " 
+	height="110" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+  
+  
+  <div class="column">
+    <img src="4sigiriya.jpg" alt="<h1>Sigiriya</h1><p>Referred by locals as the Eighth Wonder of the World this ancient palace and 
+	fortress complex has significant archaeological importance and attracts thousands of tourists every year.
+	It is probably the most visited tourist destination of Sri LankaThe western wall of Sigiriya was almost entirely 
+	covered by frescoes, created during the reign of Kasyapa. Eighteen frescoes have survived to this day.
+	The frescoes are depicting nude females and are considered to be either the portraits of Kasyapa’s wives 
+	and concubines or priestess performing religious rituals.Despite the unknown identity of the females 
+	depicted in the frescoes, these unique ancient paintings are celebrating female beautyThe construction of 
+	such a monument on a massive rock approximately 200 meters higher from the surrounding landscape required 
+	advanced architectural and engineering skills.The gardens of Sigiriya are among the oldest landscaped
+	gardens in the world.Sigiriya has water gardens, cave and boulder gardens, and also terraced gardens.
+	They are located in the western part of the rock and are with a complex hydraulic system, which 
+	consists of canals, locks, lakes, dams, bridges, fountains, as well as surface and underground water pumps.
+	In the rainy season, all channels are filled with water, which begins to circulate through the whole area of Sigiriya. 
+	Fountains of Sigiriya built in the V century, perhaps, are the oldest in the world.and have incredible historical significance.</p>" 
+	height="110" style="width:100%" onclick="myFunction(this);">
+  </div> 
+  
+  
+  
+  
+  <div class="column">
+    <img src="4hortain_plains.jpg" alt="<h1>Hortain Plains</h1><p>Horton Plains in Sri Lanka, is the coldest and windiest location 
+	in the country. It consists of ecosystems such as Montane evergreen forests, grasslands, marshy lands 
+	and aquatic ecosystem. At an altitude of 2,100 meters above sea level, Horton Plains spreads across over 
+	3,169 hectares of the highest tableland of the island.The gently rolling plateau of Horton Plains at 
+	the southern end of the central Montane massif of Sri Lanka is interspersed with net work of streams and channels.
+	The Montane forest is also the source of three major rivers of Sri Lanka: River Mahaweli-the longest river of Sri Lanka,
+	River Walave and River Kelani. Still more, Horton Plains is bounded by the country’s second and third highest mountain 
+	peaks of Sri Lanka: Mount Kirigalpotta Kanda (2389 m) and Mount Thotupola Kanda (2357 m).The escarpment with a
+	depth of 900 meters called World’s End and Baker’s Falls is one of the highlights of the Horton Plains</p>.
+" 
+	height="110" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="4sinharaja.jpg" alt="<h1>Sinharaja Rain Forest</h1><p>Located in south-west Sri Lanka, Sinharaja is the country's
+	last viable area of primary tropical rainforest. More than 60% of the trees are endemic and many of them 
+	are considered rare. There is much endemic wildlife, especially birds, but the reserve is also home to over 
+	50% of Sri Lanka's endemic species of mammals and butterflies, as well as many kinds of insects, reptiles
+	and rare amphibians.Sri Lanka is home to 830 endemic species, of which 217 trees and woody climbers are found 
+	in the low land wet zone. Of these, 139  have been recorded in the reserve including 16 rare species. Faunal 
+	endemism is particularly high for birds with 19  of 20 species recorded in the property being endemic to Sri Lanka.
+	threatened, endangered and rare species live within the reserve including: leopard , Indian elephant 
+	, endemic purple-faced Langur , Sri Lanka wood pigeon , green-billed Coucal , Sri Lanka white-headed starling 
+	, Sri Lanka blue magpie , ashy-headed babbler  and Sri Lanka broad-billed roller .</p> "
+	height="110" style="width:100%" onclick="myFunction(this);">
+ 
+
+
+ </div>
+</div>
+
+
+<section>
+<nav>
+
+<div class="container" >
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  
+  
+  <img id="expandedImg" style="width:100%" style="float:left";></nav>
+  <article><div id="imgtext" ></div>
+</div></article></section>
+
+
+ <!-- sroll button -->
+     <button onclick="topFunction()" id="scrollBtn" title="Go to top">Get in touch</button>
+
+<!-- footer -->
+<footer id="footer" class="footer" >
+  <div class="socialMedia-wrapper">
+    <ul>
+      <li><a href="#" target="_blank"></a>       
+          <img src="twitter-2.png" alt="Twitter Logo" class="twitter-icon"></a>
+      </li>
+      <li>
+        <a href="#" target="_blank"></a>
+          <img src="linkedin-2.png" alt="Linkedin Logo" class="linkedin-icon"></a>
+      </li>
+      <li>
+        <a href="#" target="_blank"></a>
+          <img src="fb-2.png" alt="Facebook Logo" class="facebook-icon"></a>
+      </li>
+      <li>
+        <a href="#" target="_blank"></a>
+          <img src="tumblr-2.png" alt="Tumblr Logo" class="tumblr-icon"></a>
+      </li>
+    </ul>
+  </div>
+
+  <p class="cp-text">
+   &nbsp;&nbsp; © Copyright 2020 Love Serendib. All rights reserved.</p><a href="dumindu.html"><div class="pageeditor">Page Editor</div></a>
+</footer>
+
+
+
+
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+   //Get the button
+var mybutton = document.getElementById("scrollBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+</script>
+
+</body>
+</html>

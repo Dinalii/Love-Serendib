@@ -1,0 +1,88 @@
+
+.subh1{
+  color: #CCC;
+  font-family: Roboto;
+  margin-top: 20px;
+  margin-left: 15%;
+  font-size: 3rem;
+}
+
+#Que{
+  padding-top:10px;
+  padding-bottom: 20px;
+  background: rgba(49, 29, 63, 0.8);
+  width:450px;
+
+}
+
+.remainingTime{
+  background-image: url("time.gif") ;
+  background-size:cover;
+  padding:30px;
+  height:400px;
+  width:400px;
+  display: block;
+   color: #CCC;
+  opacity: 0.8;
+  font-family: Roboto;
+  font-size: 2rem;
+  margin-left: 60%;
+  border-radius: 300px ;
+}
+
+#time{
+  display: block;
+  color: white;
+  margin: 170px auto 20px auto;
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+body{
+ background: url("backgroundimg-studentNo3.jpg") no-repeat center fixed;
+  background-size: cover;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: Roboto;
+  font-size: 16px;
+ 
+}
+
+.subbutton {
+  margin: 20px 20px 20px 80px;
+  text-transform: uppercase;
+  font-family: arial;
+  color: #D4D4D4 !important;
+  font-size: 14px;
+  padding: 12px 25px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  background: #E23E57;
+}
+.subbutton:hover {
+  color: #D4D4D4 !important;
+  background: #88304E;
+}
+
+.clbtn {
+  margin: 20px 20px 40px 150px;
+  font-family: arial;
+  text-transform: uppercase;
+  color: #5A5A5A !important;
+  font-size: 14px;
+  padding: 12px 25px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  background: #BF94FF;
+}
+.clbtn:hover {
+  color: #D4D4D4 !important;
+  background: #6F5694;
+}
+.list{
+  color:white;
+  
+}

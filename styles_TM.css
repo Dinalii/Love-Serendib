@@ -1,0 +1,87 @@
+body{
+  margin:0;
+  padding:0;
+}
+*{
+     box-sizing:border-box;
+}
+.container{
+  max-width:1140px;
+  margin:auto;
+  position:relative;
+  min-height: 1px;
+  background-color:transparent;
+  perspective:1000px;
+}
+.team{
+  min-height: 100vh;
+  padding:40px 15px;
+  background-color:linen;
+/* background-image:url("cw2.jpg");*/
+  display: flex;
+ width:100%;
+}
+.team h1{
+  font-size:36px;
+  font-family:Roboto;
+  font-weight:700;
+  color:black;
+  margin:0;
+  padding-bottom:60px;
+  text-align:center;
+}
+.team h2{
+	color:black;
+}
+.team p{
+   color:black;  
+}
+
+.team    .card{
+   width:25%;
+   float:left;
+  padding:0px  15px;
+}
+.team  .card  .box  img {
+  width:250px;
+  display:block;
+  margin:10px auto;
+  border-radius:0%
+}
+.team  .card .box{
+  padding:15px;
+  background-color: black;
+  border-radius:7px;
+  transition:margin 1s ease, box-shadow 1s ease;
+}
+.team  .card .box:hover{
+   margin-top:-60px;
+   box-shadow:0px  0px  40px black;
+   transform:rotateY(180deg);
+}
+.team  .card  .box h2{
+  font-size:20px;
+  font-family: Roboto;
+  margin:15px  0px  10px;
+ color:#ea5e71;
+  text-align:center;
+  font-weight:700;
+}
+.team  .card  .box p{
+  color:#b9b9b9;
+  font-size:15px;
+  font-family:Roboto;
+  font-weight:400; 
+  line-height:24px;
+  text-align:center;
+  padding:0px 20px; 
+}
+.card:hover  .back{
+position:absolute;
+visibility:visible;
+}
+.back{
+visibility:hidden;
+}
+
+

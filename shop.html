@@ -1,0 +1,223 @@
+<html>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			  <!-- css stylesheet -->
+			  <link rel="stylesheet" href="externalStyleSheet.css">
+			  <link rel="stylesheet" href="header_shop_hilal.css">
+
+			  <title >Love Serendib </title>
+			<link rel="stylesheet" type="text/css" href="store.css">
+
+		</head>
+	<body>
+		<header class="header" >
+			<div class="grid-container">
+			<div class="grid-item"><div id="logo"><img src="logo-2.jpg" alt="logo" class="logoImage" width="120" height="120" /></div></div>
+			<div class="grid-item"><div class="align-1">
+				<div class="buttons">
+				  <div class="grid-item"> <a href="homePage.html"><button class="btn ">Home</button></a></div>
+				  <div class="grid-item"> <a href="team members.html"><button class="btn ">About Us</button></a></div>
+				  <div class="grid-item"> <a href="quiz strt.html"><button class="btn ">Quiz</button></a></div>
+				  <div class="grid-item"> <a href="commentForm.html"><button class="btn ">Feedback</button></a></div>
+				  <div class="grid-item">  <a href="site map2.html">  <button class="btn ">Site Map</button></a></div>
+			</div></div></div>
+			<div class="grid-container-2">
+			  <div class="grid-item"></div>
+			   <div class="grid-item"><div class="align-2"> <button class="btn "><a href="shop.html"><input type="image" name="hilal" src="shop-2.png" alt="shopnow" ></input></a></button></div></div>
+			   <div class="grid-item"><div class="align-2"><button class="btn "><a href="https://www.google.com/maps/d/viewer?mid=1xmmR9YGeEUKsdsQkkLoeoJUqwT4&ll=5.6634975895437245%2C80.68945633256286&z=6">
+				<input type="image" name="" src="location-2.png" alt="location" ></input></a></button></div></div>
+			</div>
+		  </div>
+		</header>
+	
+	<body>
+		<h1></h1>
+		<div class=subTopic></div>
+		<p></p>
+		<div class="header_shop"></div>
+	
+	
+	<br>
+	
+		 <!-- sroll button -->
+		 <button onclick="topFunction()" id="scrollBtn" title="Go to top">Get in touch</button>
+		
+	</body>
+	
+	<script>
+		//Get the button
+	var mybutton = document.getElementById("scrollBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	
+	</script>
+	
+	
+
+<div class="cartwelcome">
+				<h1>Welcome to Our ornamental Shop</h1>
+			</div>
+		</div>
+		<form name="MyForm" onsubmit="return validateForm()" autocomplete="off" >
+
+			<div id="details">
+				<table>
+					<tr>
+						<td><label for="name"> <b>Full Name</b> </label><br><br></td>
+						<td><input type="text" id="name" name="fullname"><br><br></td>
+					</tr>
+					<tr>
+						<td><label for="email"><b> E-mail </b></label><br><br></td>
+						<td><input type="email" id="email" name="Email"><br><br></td>
+					</tr>
+					<tr>
+						<td><label for="Address"> <b>Address</b> </label><br><br></td>
+						<td><input type="text" id="address" name="Address"><br><br></td>
+					</tr>
+					<tr>					
+						<td><label for="Mnumber"><b> Mobile Number</b> </label><br><br></td>
+						<td><input type="text" id="mnumber" name="Mnumber"><br><br></td>
+					</tr>
+				</table>
+			</div>
+
+            <div class="store_outline">
+			<div class="p1">
+				<div class="item_pic">
+					<img class="imgP" src="mask.jpg" width="120" height="120">
+					<h2> mask </h2>
+				</div>
+				<div class="item_description">
+					<b> Rs 12500.00 </b><br>
+					Product Quantity You Want:
+					<input id="product1" type="number" name="PQuantity" min="0">
+					<br/>
+					<button type="button" onclick="shopedProduct1()"> Add To My cart </button>
+				</div>
+			</div>
+
+			<div class="p2">
+				<div class="item_pic">
+					<img class="imgP" src="elephant.jpg" width="120" height="120">
+					<h2> elephant </h2>
+				</div>
+				<div class="item_description">
+					<b>Rs 9500.00 </b><br/>
+					Product Quantity You Want:
+					<input id="product2" type="number" name="PQuantity" min="0">
+					<br/>
+					<button type="button" onclick="shopedProduct2()"> Add To My cart </button>
+				</div>
+			</div>
+
+			<div class="p3">
+				<div class="item_pic">
+					<img class="imgP" src="pot.jpg" width="120" height="120" >
+					<h2>pot</h2>
+				</div>
+				<div class="item_description">
+					<b>Rs 5000.00 </b><br/>
+					Product Quantity You Want:
+					<input id="product3" type="number" name="PQuantity" min="0">
+					<br/>
+					<button type="button" onclick="shopedProduct3()"> Add To My cart </button>
+				</div>
+			</div>
+
+			<div class="p4">
+				<div class="item_pic">
+					<img class="imgP" src="necklace.jpg" width="120" height="120">
+					<h2>necklace</h2>
+				</div>
+				<div class="item_description">
+					<b>Rs 3000.00 </b><br/>
+					Product Quantity You Want:
+					<input id="product4" type="number" name="PQuantity" min="0">
+					<br/>
+					<button type="button" onclick="shopedProduct4()"> Add To My cart </button>
+				</div>
+			</div>
+
+			<div class="p5">
+				<div class="item_pic">
+					<img class="imgP" src="bracelet.jpg" width="120" height="120">
+					<h2> bracelet </h2>
+				</div>
+				<div class="item_description">
+					<b>Rs 9500.00 </b><br/>
+					Product Quantity You Want:
+					<input id="product5" type="number" name="PQuantity" min="0">
+					<br/>
+					<button type="button" onclick="shopedProduct5()"> Add To My cart </button>
+				</div>
+			</div>
+		
+			<div class="p6">
+				<div class="item_pic">
+					<img  src="swan.jpg" width="120" height="120">
+					<h2> swan </h2>
+				</div>
+				<div class="item_description">
+					<b> Rs 5000.00 </b><br/>
+					Product Quantity You Want:
+					<input id="product6" type="number" name="PQuantity" min="0">
+					<br/>
+					<button type="button" onclick="shopedProduct6()"> Add To My cart </button>
+				</div>
+			</div>
+           <div class="placeOrder">
+				<div class="placeOrderButtonLayout">
+					<input type="submit" value="Place Your Order" class="purchase">
+					<input type="reset" value="Reset" class="reset">
+				</div>
+			</div>
+			</div>
+
+		</form>
+	   <script src="shopnew.js"></script>
+
+	   <!-- footer -->
+	<footer id="footer" class="footer" >
+		<div class="socialMedia-wrapper">
+		  <ul>
+			<li><a href="#" target="_blank"></a>       
+				<img src="twitter-2.png" alt="Twitter Logo" class="twitter-icon"></a>
+			</li>
+			<li>
+			  <a href="#" target="_blank"></a>
+				<img src="linkedin-2.png" alt="Linkedin Logo" class="linkedin-icon"></a>
+			</li>
+			<li>
+			  <a href="#" target="_blank"></a>
+				<img src="fb-2.png" alt="Facebook Logo" class="facebook-icon"></a>
+			</li>
+			<li>
+			  <a href="#" target="_blank"></a>
+				<img src="tumblr-2.png" alt="Tumblr Logo" class="tumblr-icon"></a>
+			</li>
+		  </ul>
+		</div>
+	  
+		<p class="cp-text">
+		 &nbsp;&nbsp; © Copyright 2020 Love Serendib. All rights reserved.</p><a href="pageEditor-1.html"><div class="pageeditor">Page Editor</div></a>
+	 </footer>
+	 
+  
+	</body>
+</html>

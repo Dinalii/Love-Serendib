@@ -1,0 +1,212 @@
+body {
+  margin: 10px;
+  background: url("commentbk-2.jpg" )  fixed;
+  background-size: cover;
+  
+}
+/* reset */
+* {
+  box-sizing: border-box;
+}
+
+
+/* form container */
+.survey-form {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+.survey-form fieldset {
+  background-color:lightsteelblue; 
+}
+.survey-form legend {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Pacifico', monospace;  
+}
+
+.personal-details{
+  background-color:lightblue;
+  border: 2px solid var(--primary-color);
+  padding: 1em;
+  width: 95%;
+  margin: 1em auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-areas: 
+                      "name name"
+                      "email email"
+                      "age age"
+                      "country country"
+                      "rating rating"
+                      "textarea textarea";
+                      grid-gap: 1em; 
+}
+
+/* personal details item */
+
+/* name */
+.survey-name {
+  grid-area: name;
+}
+.survey-name input {
+  text-transform: capitalize;
+}
+/* email */
+.survey-email {
+  grid-area: email;
+}
+/* age */
+.survey-country  {
+  grid-area: country ;
+}
+
+
+/* rating */
+.survey-rating {
+  grid-area: rating;
+}
+
+.text-area {
+  grid-area: textarea;
+  text-align: center;
+}
+
+/* personal details customize */
+
+/* input */
+.survey-name input,
+.survey-email input,
+.survey-country  input,
+.survey-rating,
+.text-area input {
+width: 100%;
+background:lemonchiffon;
+padding: 0.5em 1em;
+border: 2px solid var(--primary-color);
+text-align: center;
+color: var(--font-color);
+border-radius: 25px;
+margin-top: 0.5em;
+}
+
+
+/* input focus */
+.survey-name input:focus,
+.survey-email input:focus,
+.survey-country input:focus,
+.survey-rating input:focus,
+.text-area input:focus{
+font-weight: 800;
+outline: none;
+}
+
+/* input hover */
+.survey-name input:hover,
+.survey-email input:hover,
+.survey-country  input:hover{
+background-color: rgb(10, 75, 116);
+box-shadow: 0 0 10px 0 lightgrey;
+}
+
+
+/* label */
+.survey-name label,
+.survey-email label,
+.survey-country  label,
+.text-area label {
+font-weight: bold;
+margin-bottom: 1px;
+}
+
+/* submit button */
+.survey-submit button{
+  text-align: center;
+  display: block;
+  padding: 0.5em 1em;
+  margin: 1em auto 0.75em;
+  width: 20%;
+  background-color:rgb(90, 92, 228);
+  color: var(--font-color);
+  box-shadow: 0 0 10px lightblue;
+  border-radius: 24px;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+/* textarea */
+.text-area textarea {
+  text-align: center;
+  background-color: white;
+  border-radius: 25px;
+  border: 2px solid #FFF;
+  outline: none;
+  padding: 0.5em 1em;
+  color: var(--font-color);
+  resize: none;
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+
+#survey-form {
+max-width: 90%;
+margin: 0.5em auto;
+box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.75);
+}
+
+@media screen and (min-width: 56em) {
+#survey-form {
+max-width: 80%;
+}
+}
+@media screen and (min-width: 64em) {
+#survey-form {
+max-width: 70%;
+}
+}
+@media screen and (min-width: 72em) {
+#survey-form {
+max-width: 50%;
+}
+}
+
+
+/*rating
+/* Rating styles */
+/* Rating styles */
+.survey-rating {
+border:solid 1px #ccc;
+display:flex;
+flex-direction: row-reverse;
+justify-content:space-around;
+padding:8px;
+text-align:center;
+width: 320px;
+margin: 0 auto 1em;
+font-size: 50px;
+overflow:hidden;
+}
+
+
+.survey-rating input {
+display:yellow;
+}
+
+.survey-rating label {
+color:#ccc;
+cursor:pointer;
+text-decoration:none;
+}
+
+.survey-rating :checked ~ label {
+color:#f90;
+}
+
+.survey-rating label:hover,
+.survey-rating label:hover ~ label {
+color:#fc0;
+}
+

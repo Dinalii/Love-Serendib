@@ -1,0 +1,97 @@
+body{
+	background-color: #EC449B;
+	color: #800000;
+}
+
+h2{
+	font-size: 50px;
+}
+.p1,.p2,.p3,.p4,.p5,.p6{
+	padding-top:20px;
+	margin: auto;
+	font-family: Corbel, Calbri, sans-serif;     
+    font-size: 24px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 25px;
+    background: #99f443;
+	height:250px;
+	width:80%;
+}
+.cartwelcome{
+	font-family: Corbel, Calbri, sans-serif;
+	font-size:24px;
+	margin:auto;
+	background-color: azure;
+	color: burlywood;
+	top:50%;
+	left:25%;
+	position:absolute;
+	padding:20px;
+	border-radius:20px;
+}
+.placeOrder{
+	width:80%;
+	margin:auto;
+	height:60px;
+}
+.item_description{
+	float:right;
+	padding-top:50px;
+}
+.item_pic{
+	float:left;
+}
+.placeOrderButtonLayout{
+	float:right;
+}
+
+input[type=submit]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+input[type=reset]{
+  background-color: #800000;
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+#name,#email,#mnumber,#address{
+    background-color: #6c7980 ;
+    outline: none;
+    border:2px solid black;
+    border-width: 0 0 2px;
+    
+}
+
+#details{
+    width:30%;
+	margin:auto;
+	font-family: Corbel, Calbri, sans-serif;      
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 25px;
+    background: #6c7980;
+    background-size:1530px 800px;
+}
+
+#fline{
+	text-align: right;
+}
